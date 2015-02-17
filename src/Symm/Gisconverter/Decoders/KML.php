@@ -92,7 +92,7 @@ class KML extends XML
     {
         $nodename = strtolower($xml->getName());
 
-        if ($nodename == "kml" or $nodename == "document" or $nodename == "placemark") {
+        if ($nodename == "kml" or $nodename == "document" or $nodename == "placemark" or $nodename == "folder") {
             return static::childsCollect($xml);
         }
 
