@@ -12,7 +12,8 @@ class LineString extends MultiPoint
     public function __construct($components)
     {
         if (count($components) < 2) {
-            throw new InvalidFeature(__CLASS__, "LineString must have at least 2 points");
+        	echo "- LineString must have at least 2 points". PHP_EOL;
+            //throw new InvalidFeature(__CLASS__, "LineString must have at least 2 points");
         }
 
         parent::__construct($components);
